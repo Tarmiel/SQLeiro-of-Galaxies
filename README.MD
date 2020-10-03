@@ -5,7 +5,7 @@
 <h5 align="center">
   
 ```bash
-$ git clone https://github.com/Tarmiel/SQLeiro.Of.The.Galaxies
+$ git clone https://github.com/Tarmiel/SQLeiro-of-Galaxies
 ```
 </h6>
 
