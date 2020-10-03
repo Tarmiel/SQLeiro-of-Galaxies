@@ -13,7 +13,7 @@ $ git clone https://github.com/Tarmiel/SQLeiro-of-Galaxies
 
 <br>
 
-[![First Part](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=MySQL&logoWidth=78&logoColor=white&color=4479A1&labelColor=003B57)](https://github.com/Tarmiel/SQLeiro.Of.The.Galaxies/blob/master/SQLwithRapadura_1.sql)
+[![First Part](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=MySQL&logoWidth=78&logoColor=white&color=4479A1&labelColor=003B57)](https://github.com/Tarmiel/SQLeiro-of-Galaxies/tree/master/scripts)
 <br>
 [![Content](https://img.shields.io/badge/-Content:-4479A1?style=for-the-badge&color=CC2927)](#)
 
