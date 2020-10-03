@@ -53,7 +53,7 @@ $ git clone https://github.com/Tarmiel/SQLeiro.Of.The.Galaxies
 <h3 align="center">These SQL commands are mainly categorized into four categories as:</h3>
 <br>
 
-<hr>
+<h4>
 
 - DDL(Data Definition Language) : DDL or Data Definition Language actually consists of the SQL commands that can be used to define the database schema. It simply deals with descriptions of the database schema and is used to create and modify the structure of database objects in the database.
 
@@ -90,7 +90,5 @@ Examples of TCL commands:
         SET TRANSACTION – specify characteristics for the transaction.
   
 </h4>
-
-<hr>
 
 ![Image](https://wpdeveloper.com.br/wp-content/uploads/2018/08/comandos-sql-uteis-wordpress.jpg)
