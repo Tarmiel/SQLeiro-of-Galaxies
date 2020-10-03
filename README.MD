@@ -45,7 +45,6 @@ $ git clone https://github.com/Tarmiel/SQLeiro.Of.The.Galaxies
     OPERATIONS IN LINE
     CHANGING TABLES
     KEYS - CONSTRAINT
-<hr>
 
 ![IMG](https://img.wallpapersafari.com/desktop/1600/900/2/36/bOoCKX.jpg)
 
