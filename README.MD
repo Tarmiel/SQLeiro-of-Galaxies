@@ -47,6 +47,7 @@ $ git clone https://github.com/Tarmiel/SQLeiro-of-Galaxies
     28 - AUDIT TRIGGER
     29 - SELF RELATIONSHIP
     30 - CURSORS
+    31 - SECOND AND THIRD NORMAL FORMS
 
 ![IMG](https://img.wallpapersafari.com/desktop/1600/900/2/36/bOoCKX.jpg)
 
