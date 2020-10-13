@@ -58,7 +58,7 @@ INSERT INTO CLIENTE VALUES('ANA','F','ANA@GLOBO.COM',85959543,'548556985','PRES 
 					
 /* Start */
 /* -- ---------------------------------------------------------------------------------------- -- */
-/* A009 - O COMANDO SELECT */
+/* A004 - O COMANDO SELECT */
 SELECT NOW();
 SELECT 'TARMIEL';
 SELECT 'BANCO DE DADOS';
@@ -71,7 +71,7 @@ SELECT * FROM CLIENTE;
 
 
 /* -- ---------------------------------------------------------------------------------------- -- */
-/* A10 - FILTRANDO DADOS COM WHERE E LIKE */
+/* A005 - FILTRANDO DADOS COM WHERE E LIKE */
 SELECT NOME,TELEFONE FROM CLIENTE;
 
 -- FILTRANDO
@@ -91,7 +91,7 @@ SELECT NOME,SEXO,ENDERECO FROM CLIENTE
 
 
 /* -- ---------------------------------------------------------------------------------------- -- */
-/* A11 - OPERADORES LOGICOS */
+/* A006 - OPERADORES LOGICOS */
 -- OR = OU
 SELECT NOME,EMAIL,SEXO,ENDERECO FROM CLIENTE c 
 	WHERE SEXO = 'M' OR ENDERECO LIKE '%RJ'; -- SEXO = 'F' OU ENDERECO TENHA UM VALOR QUE TERMINE EM RJ
@@ -106,7 +106,7 @@ SELECT NOME,EMAIL,ENDERECO FROM CLIENTE c
 
 
 /* -- ---------------------------------------------------------------------------------------- -- */
-/* A12 - COUNT E GROUP BY - PERFORMANCE A*/
+/* A007 - COUNT E GROUP BY - PERFORMANCE A*/
 -- CONTANDO OS REGISTROS DE UMA TABELA
 SELECT COUNT(*) FROM CLIENTE;
 SELECT COUNT(*) AS 'QTD' FROM CLIENTE; 
@@ -149,13 +149,13 @@ SELECT NOME,SEXO,ENDERECO FROM CLIENTE c
 
 
 /* -- ---------------------------------------------------------------------------------------- -- */
-/* A13 - FILTRANDO VALORES NULOS*/
+/* A008 - FILTRANDO VALORES NULOS*/
 SELECT NOME,SEXO,EMAIL,ENDERECO FROM CLIENTE c 
 	WHERE EMAIL IS NULL;
 
 
 /* -- ---------------------------------------------------------------------------------------- -- */
-/* A14 - UTILIZANDO O UPDATE PARA ATUALIZAR VALORES */
+/* A009 - UTILIZANDO O UPDATE PARA ATUALIZAR VALORES */
 -- UTILIZAR O UPDATE SEMPRE ACOMPANHADO DA CLAUSULA WHERE
 UPDATE CLIENTE SET EMAIL = 'LILIAN@HOTMAIL.COM' 
 	WHERE NOME = 'LILIAN' AND EMAIL IS NULL;
@@ -164,14 +164,14 @@ SELECT * FROM CLIENTE;
 
 
 /* -- ---------------------------------------------------------------------------------------- -- */
-/* A15 - DELETANDO REGISTROS COM A CLAUSULA DELETE */
+/* A10 - DELETANDO REGISTROS COM A CLAUSULA DELETE */
 SELECT COUNT(*) FROM CLIENTE;
 DELETE FROM CLIENTE WHERE NOME = 'ANA';
 SELECT COUNT(*) FROM CLIENTE; 
 
 
 /* -- ---------------------------------------------------------------------------------------- -- */
-/* A16 - ENTRANDO COM MAIS TELEFONES */
+/* A11 - ENTRANDO COM MAIS TELEFONES */
 -- GAMBIARRA NA MODELAGEM
 UPDATE CLIENTE SET TELEFONE = '22923110-90908888' -- DOIS TELEFONES
 	WHERE NOME = 'JOAO';
@@ -230,7 +230,7 @@ SHOW TABLES;
 
 
 /* -- ---------------------------------------------------------------------------------------- -- */
-/* A20 - INSERINDO REGISTROS */
+/* A12 - INSERINDO REGISTROS */
 INSERT INTO CLIENTE VALUES(NULL,'JOAO','M','JOAO@IG.COM','98547-6');
 INSERT INTO CLIENTE VALUES(NULL,'CARLOS','M','CARLOS@TERA.COM','986664-7');
 INSERT INTO CLIENTE VALUES(NULL,'ANA','F','ANA@GLOBO.COM','75658-5');
@@ -298,7 +298,7 @@ SELECT * FROM TELEFONE t ;
 
 
 /* -- ---------------------------------------------------------------------------------------- -- */
-/* A21 - SELEÇÃO, PROJEÇÃO E JUNÇÃO */
+/* A13 - SELEÇÃO, PROJEÇÃO E JUNÇÃO */
 
 -- PROJEÇÃO - TUDO QUE QUEREMOS PROJETAR NA TELA
 -- PROJETEI A COLUNA DATA , QUE NÃO EXISTE EM NENHUMA TABELA
@@ -362,7 +362,7 @@ SELECT NOME,SEXO,EMAIL,BAIRRO,CIDADE,TIPO,NUMERO
 
 
 /* -- ---------------------------------------------------------------------------------------- -- */
-/* A22 - QUERIES, SELEÇAO, PROJECAO E JUNCAO*/
+/* A14 - QUERIES, SELEÇAO, PROJECAO E JUNCAO*/
 
 /* PARA UMA CAMPANHA DE MARKETING, O SETOR SOLICITOU UM RELATÓRIO 
  * COM O NOME, EMAIL E TELEFONE CELULAR DOS CLIENTES
@@ -414,7 +414,7 @@ SELECT IDCLIENTE AS "CODIGO",NOME AS "CLIENTE",
 
 
 /* -- ---------------------------------------------------------------------------------------- -- */
-/* A23 - VIEWS OU VISOES */
+/* A15 - VIEWS OU VISOES */
 
 SELECT c.NOME,c.SEXO,
 		IFNULL(c.EMAIL,'SEM EMAIL') AS "EMAIL",
@@ -477,7 +477,7 @@ INSERT INTO V_RELATORIO VALUES ();
 
 
 /* -- ---------------------------------------------------------------------------------------- -- */
-/* A24 - DELIMITADOR E ESTADO DE SERVIDOR */
+/* A16 - DELIMITADOR E ESTADO DE SERVIDOR */
 SELECT * FROM V_RELATORIO
 
 SELECT * FROM V_RELATORIO; -- Ponto e Virgula
@@ -489,7 +489,7 @@ STATUS -- Informações do banco
 
 
 /* -- ---------------------------------------------------------------------------------------- -- */
-/* A25 - PROCEDURES */
+/* A17 - PROCEDURES */
 
 /* CREATE PROCEDURE nome(
  * BEGIN
@@ -525,7 +525,7 @@ CALL CONTA(20,30);
 
 
 /* -- --------------------------------------------------------------------------------------- -- */
-/* A26 - PROCEDURES COM TABELAS */
+/* A18 - PROCEDURES COM TABELAS */
 
 CREATE TABLE CURSOS(
 	IDCURSO INT PRIMARY KEY AUTO_INCREMENT,
@@ -562,7 +562,7 @@ CALL SEL_CURSOS();
 
 
 /* -- --------------------------------------------------------------------------------------- -- */
-/* A26 - FUNCOES DE AGREGACAO NUMERICAS */
+/* A19 - FUNCOES DE AGREGACAO NUMERICAS */
 
 CREATE TABLE VENDEDORES(
 	IDVENDEDOR INT PRIMARY KEY AUTO_INCREMENT,
@@ -618,7 +618,7 @@ SELECT MAX(JANEIRO) AS MAX_JAN,
 
 
 /* -- --------------------------------------------------------------------------------------- -- */
-/* A27 - AGREGANDO COM SUM */
+/* A20 - AGREGANDO COM SUM */
 
 SELECT SUM(JANEIRO) AS TOTAL_JAN
 	FROM VENDEDORES;
@@ -631,7 +631,7 @@ SELECT SEXO,SUM(MARCO) AS TOTAL_MARCO
 
 
 /* -- --------------------------------------------------------------------------------------- -- */
-/* A28 - SUBQUERIES
+/* A21- SUBQUERIES
  * VENDEDOR QUE MENOS VENDEU EM MARCO E O SEU NOME */
 SELECT NOME, MARCO AS VENDAS_MIN_MARCO 
 	FROM VENDEDORES 
@@ -649,7 +649,7 @@ SELECT NOME,MARCO AS VENDAS_MAX_MARCO
 
 
 /* -- --------------------------------------------------------------------------------------- -- */
-/* A29 - OPERACOES EM LINHA */
+/* A22 - OPERACOES EM LINHA */
 SELECT * FROM VENDEDORES;
 SELECT NOME,JANEIRO,FEVEREIRO,MARCO,(JANEIRO+FEVEREIRO+MARCO) AS "TOTAL", TRUNCATE((JANEIRO+FEVEREIRO+MARCO)/3,2) AS "MEDIA"
 	FROM VENDEDORES;
@@ -662,7 +662,7 @@ SELECT NOME,JANEIRO,FEVEREIRO,MARCO,(JANEIRO+FEVEREIRO+MARCO) AS "TOTAL",
 
 
 /* -- --------------------------------------------------------------------------------------- -- */
-/* A30 - ALTERANDO TABELAS */
+/* A23 - ALTERANDO TABELAS */
 CREATE TABLE TABELA(
 	COLUNA1 VARCHAR(30),
 	COLUNA2 VARCHAR(30),
@@ -707,7 +707,7 @@ SHOW CREATE TABLE TIME;
 
 
 /* -- --------------------------------------------------------------------------------------- -- */
-/* A31 - ORGANIZAÇAO DE CHAVES , CONSTRAINT(REGRA)*/
+/* A24 - ORGANIZAÇAO DE CHAVES , CONSTRAINT(REGRA)*/
 CREATE DATABASE TESTE_TIMES;
 
 CREATE TABLE JOGADOR(
@@ -732,7 +732,7 @@ SHOW CREATE TABLE TIMES;
 
 
 /* -- --------------------------------------------------------------------------------------- -- */
-/* A32 - ORGANIZANDO CHAVES E ACOES DE CONSTRAINTS */
+/* A25 - ORGANIZANDO CHAVES E ACOES DE CONSTRAINTS */
 CREATE TABLE CLIENTE(
 	IDCLIENTE INT,
 	NOME VARCHAR(30)
@@ -778,7 +778,7 @@ DROP FOREIGN KEY FK_CLIENTE_TELEFONE;
 
 
 /* -- --------------------------------------------------------------------------------------- -- */
-/* A33 - TRIGGERS */
+/* A26 - TRIGGERS */
 /* ESTRUTURA DE UMA TRIGGER */
 CREATE TRIGGER NOME
 BEFORE/AFTER INSERT/DELETE/UPDATE ON TABELA
@@ -829,7 +829,7 @@ SHOW TRIGGERS FROM DB_NAME;
 
 
 /* -- --------------------------------------------------------------------------------------- -- */
-/* A33 - COMUNICAÇÃO ENTRE BANCOS */
+/* A27 - COMUNICAÇÃO ENTRE BANCOS */
 CREATE DATABASE LOJA;
 USE LOJA;
 CREATE TABLE PRODUTO(
@@ -928,7 +928,7 @@ DROP COLUMN EVENTO;
 
 
 /* -- --------------------------------------------------------------------------------------- -- */
-/* A34 - TRIGGER DE AUDITORIA */
+/* A28 - TRIGGER DE AUDITORIA */
 
 DROP DATABASE LOJA;
 DROP DATABASE BACKUP;
@@ -984,7 +984,7 @@ SELECT * FROM BACKUP.BKP_PRODUTO;
 
 
 /* -- --------------------------------------------------------------------------------------- -- */
-/* A35 - AUTO RELACIONAMENTO */
+/* A29 - AUTO RELACIONAMENTO */
 CREATE DATABASE CURSOS;
 USE CURSOS;
 CREATE TABLE CURSOS(
@@ -1017,13 +1017,84 @@ LEFT JOIN CURSOS P
 ON P.IDCURSO = C.IDREQ
 
 
+/* -- --------------------------------------------------------------------------------------- -- */
+/* A30 - CURSORS */
+CREATE DATABASE CURSORES;
+USE CURSORES;
+
+CREATE TABLE VENDEDORES(
+	IDVENDEDOR INT PRIMARY KEY AUTO_INCREMENT,
+	NOME VARCHAR(50),
+	JAN INT,
+	FEV INT,
+	MARC INT
+);
+
+INSERT INTO VENDEDORES VALUES (NULL,'LUCAS',1400,2300,4400);
+INSERT INTO VENDEDORES VALUES (NULL,'MARIA',2600,3000,1400);
+INSERT INTO VENDEDORES VALUES (NULL,'CHESMA',6400,2300,6400);
+INSERT INTO VENDEDORES VALUES (NULL,'JEFERSON',3400,12300,1400);
+
+SELECT * FROM VENDEDORES;
+
+SELECT NOME, (JAN+FEV+MARC) AS TOTAL FROM VENDEDORES;
+SELECT NOME, (JAN+FEV+MARC) AS TOTAL, TRUNCATE((JAN+FEV+MARC)/3,2) AS MEDIA FROM VENDEDORES;
+
+CREATE TABLE VEND_TOTAL (
+	NOME VARCHAR(50),
+	JAN INT,
+	FEV INT,
+	MARC INT,
+	TOTAL INT,
+	MEDIA INT
+);
+
+DELIMITER $
+
+CREATE PROCEDURE INSERE_DADOS()
+BEGIN
+	DECLARE FIM INT DEFAULT 0;
+	DECLARE VAR1, VAR2, VAR3,VTOTAL,VMEDIA INT;
+	DECLARE VNOME VARCHAR(50);
+
+	DECLARE REG CURSOR FOR(
+		SELECT NOME, JAN, FEV, MARC FROM VENDEDORES	
+	);
+
+	DECLARE CONTINUE HANDLER FOR NOT FOUND SET FIM = 1;
+
+	OPEN REG; -- JOGAR OS VALORES NA MEMORIA RAM
+
+	REPEAT
+		FETCH REG INTO VNOME, VAR1, VAR2, VAR3;
+		IF NOT FIM THEN
+			SET VTOTAL = VAR1+VAR2+VAR3;
+			SET VMEDIA = VTOTAL/3;
+
+			INSERT INTO VEND_TOTAL VALUES(VNOME,VAR1,VAR2,VAR3,VTOTAL,VMEDIA);  
+		END IF;
+	UNTIL FIM END REPEAT;
+	CLOSE REG;
+END
+$
+
+DELIMITER ;
+
+SELECT * FROM VEND_TOTAL;
+CALL INSERE_DADOS();
+SELECT * FROM VEND_TOTAL;
 
 
+/* -- --------------------------------------------------------------------------------------- -- */
+/* A31 - SEGUNDA E TERCEIRAS FORMAS NORMAIS */
+/*
+	PRIMEIRA FN
 
+	ATOMICIDADE - UM CAMPO NÃO PODE SER DIVISIVEL
+	UM CAMPO NÃO PODE SER VETORIZADO
+	PK CHAVE PRIMMARIA
 
-
-
-
+*/
 
 
 
