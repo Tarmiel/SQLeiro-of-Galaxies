@@ -1154,6 +1154,21 @@ SHOW DATABASES;
 USE INFORMATION_SCHEMA;
 DESC TABLE_CONSTRAINTS;
 
+
+/* -- --------------------------------------------------------------------------------------- -- */
+/* A32 -  */
+
+
+
+
+
+
+
+
+
+
+
+
 /* -- ---------------------------------------------------------------------------------------- -- */
 /* End of the first part, I hope the content offered here has been useful */
 
