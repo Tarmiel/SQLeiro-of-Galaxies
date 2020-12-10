@@ -93,4 +93,4 @@ Examples of TCL commands:
   
 </h4>
 
-![Image](https://wpdeveloper.com.br/wp-content/uploads/2018/08/comandos-sql-uteis-wordpress.jpg)
+![Image](https://i.imgur.com/iipgZmh.gif)
