@@ -13,7 +13,7 @@ $ git clone https://github.com/Tarmiel/SQLeiro-of-Galaxies
 
 <br>
 
-![SQL](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mySQL&logoWidth=71.5&logoColor=white&color=796e96&labelColor=c44747)
+![SQL](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mySQL&logoWidth=71.5&logoColor=white&color=796e96&labelColor=c44747) | 
 ![Content](https://img.shields.io/badge/-Content:-4479A1?style=for-the-badge&color=c44747)
 
     AULA 01 - INTRODUCTION TO MODELING
