@@ -1,0 +1,39 @@
+/*'SQLeiro das galaxies' guide, a quick and 'practical' introduction to SQL*/
+/*AULA 15*/
+
+
+/* -- ---------------------------------------------------------------------------------------- -- */
+/* PROCEDURES */
+
+/* CREATE PROCEDURE nome(
+ * BEGIN
+ * 		AÇÃO;
+ * END
+ * $ -- CONSULTAR O DELIMITER
+ */
+
+CREATE PROCEDURE CONTA()
+BEGIN
+	SELECT 10+10 AS "CONTA";	
+END
+$ -- UTILIZE O DELIMITADOR $ , CONSULTE O DELIMITADOR USANDO O COMANDO STATUS
+
+/* CHAMANDO A PROCEDURE */
+CALL CONTA()$
+DELIMITER ;
+
+/* PROCEDURE COM PARAMETROS */
+DROP PROCEDURE CONTA; -- APAGANDO
+
+DELIMITER $
+
+CREATE PROCEDURE CONTA(NUM1 INT,NUM2 INT)
+BEGIN
+	SELECT NUM1+NUM2 AS "CONTA";	
+END
+$
+
+DELIMITER ;
+
+CALL CONTA(20,30);
+

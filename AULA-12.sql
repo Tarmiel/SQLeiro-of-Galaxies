@@ -1,5 +1,5 @@
 /*'SQLeiro das galaxies' guide, a quick and 'practical' introduction to SQL*/
-/*AULA 11*/
+/*AULA 12*/
 
 
 /* IFNULL */
