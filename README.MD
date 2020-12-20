@@ -35,7 +35,7 @@ $ git clone https://github.com/Tarmiel/SQLeiro-of-Galaxies
               NOT NULL
               AUTO INCREMENT 
     AULA 09 - INNER JOIN
-    AULA 10,11 - SELECTION, PROJECTION AND JOIN-----
+    AULA 10,11 - SELECTION, PROJECTION AND JOIN
     AULA 12 - IFNULL
     AULA 13 - VIEW
     AULA 14 - DELIMITER, STATUS
