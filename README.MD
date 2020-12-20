@@ -13,27 +13,31 @@ $ git clone https://github.com/Tarmiel/SQLeiro-of-Galaxies
 
 <br>
 
-[![First Part](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=MySQL&logoWidth=78&logoColor=white&color=4479A1&labelColor=003B57)](https://github.com/Tarmiel/SQLeiro-of-Galaxies/tree/master/scripts__MySQL)
+![SQL](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mySQL&logoWidth=70&logoColor=white&color=796e96&labelColor=c44747)
 <br>
-[![Content](https://img.shields.io/badge/-Content:-4479A1?style=for-the-badge&color=CC2927)](#)
+![Content](https://img.shields.io/badge/-Content:-4479A1?style=for-the-badge&color=c44747)
 
-    INTRODUCTION TO MODELING
-    CREATE
-    USE
-    SHOW
-    DESC
-    INSERT
-    04 - SELECT
-    05 - WHERE, LIKE
-    06 - LOGICAL OPERATORS
-    07 - COUNT, GROUP BY
-    08 - NULL VALUES
-    09 - UPDATE/SET
-    10 - DELETE
-    11 - "ADVANCED" MODELING
-    PRIMARY AND FOREIGN KEY, UNIQUE, NOT NULL, AUTO INCREMENT 
-    13 - INNER JOIN
-    14 - IFNULL
+    AULA 01 - INTRODUCTION TO MODELING
+              CREATE
+              USE
+              SHOW
+              DESC
+              INSERT
+              SELECT
+    AULA 02 - WHERE, LIKE
+    AULA 03 - LOGICAL OPERATORS
+    AULA 04 - COUNT, GROUP BY
+    AULA 05 - NULL VALUES
+    AULA 06 - UPDATE/SET
+    AULA 07 - DELETE
+    AULA 08 - "ADVANCED" MODELING
+              PRIMARY AND FOREIGN KEY
+              UNIQUE
+              NOT NULL
+              AUTO INCREMENT 
+    AULA 09 - INNER JOIN
+    AULA 10,11 - SELECTION, PROJECTION AND JOIN-----
+    AULA 12 - IFNULL
     15 - VIEW
     16 - DELIMITER, STATUS
     17,18 - PROCEDURES

@@ -1,0 +1,23 @@
+/*'SQLeiro das galaxies' guide, a quick and 'practical' introduction to SQL*/
+/*AULA 03*/
+
+
+/* -- ---------------------------------------------------------------------------------------- -- */
+/* OPERADORES LOGICOS */
+-- OR = OU
+SELECT NOME,EMAIL,SEXO,ENDERECO FROM CLIENTE c 
+	WHERE SEXO = 'F' OR ENDERECO LIKE '%RJ'; 
+    -- SEXO = 'F' OU ENDERECO TENHA UM REGISTRO QUE TERMINE EM RJ
+
+SELECT NOME,EMAIL,ENDERECO FROM CLIENTE c 
+	WHERE SEXO = 'M' OR ENDERECO LIKE '%ESTACIO'; 
+
+
+-- AND = E
+SELECT NOME,EMAIL,ENDERECO FROM CLIENTE c 
+	WHERE SEXO = 'M' AND ENDERECO LIKE '%RJ'; 
+    -- SEXO ='M' E ENDERECO TENHA UM REGISTRO QUE TERMINE EM RJ
+
+SELECT NOME,EMAIL,ENDERECO FROM CLIENTE c 
+	WHERE SEXO = 'F' AND ENDERECO LIKE '%CENTRO%';
+
