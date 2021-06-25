@@ -1,6 +1,6 @@
 <h1 align="center">SQL with Rapadura:octocat: </h1>
 
-#### Detailed SQL 'scripts' from basic to 'possible'.<br>Click on the badges or manually on the file in the repository, or if you prefer, clone the repository with the following command:
+#### Detailed SQL 'scripts' from basic to 'possible'.<br>Click on the file in the repository, or if you prefer, clone the repository with the following command:
 
 <h5 align="center">
   
