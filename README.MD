@@ -5,7 +5,7 @@
 <h5 align="center">
   
 ```bash
-$ git clone https://github.com/Tarmiel/RPD-ALTERYX
+$ git clone https://github.com/Tarmiel/RPD-SQL
 ```
 </h6>
 
