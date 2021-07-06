@@ -53,3 +53,4 @@ $ git clone https://github.com/Tarmiel/RPD-SQL
     AULA 27 - SECOND AND THIRD NORMAL FORMS
 
 ![Image](https://i.imgur.com/iipgZmh.gif)
+#### Analyze each flow and if you have any questions, send me a message or search =)
